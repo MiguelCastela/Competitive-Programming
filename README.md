@@ -43,6 +43,45 @@ individual problems from that set. An `input.txt` file, when present, holds
 sample input used while testing. Files such as `A_bottom_up.cpp` are alternative
 solutions to the same problem using a different approach.
 
+## Course projects
+
+The two graded projects from the Algorithmic Strategies course live under
+`estrategias-algoritmicas/projects/`. Each folder keeps its problem statement
+(PDF) next to the solution.
+
+### prob1 - Battle for Piltover
+
+Objective: given a city grid of empty cells, walls, and outposts, place the
+minimum number of turrets so that every empty cell is covered by at least one
+turret, each outpost has exactly its requested number of turrets placed in the
+orthogonally adjacent cells, and no two turrets share a line of sight (turrets
+fire along rows and columns until blocked by a wall or an outpost). If no valid
+placement exists, the answer is "noxus will rise!".
+
+Solution: the cells are modelled as empty, wall, or outpost objects. The solver
+first satisfies the hard constraints by placing the turrets forced around each
+outpost, rejecting any board where an outpost cannot meet its exact count. It
+then fills the remaining uncovered empty cells with turrets, checking the four
+directions each time so that the no-mutual-line-of-sight rule is never broken,
+and reports failure if any cell stays uncovered. To keep the search tractable, a
+flood fill first splits the grid into independent regions (groups of cells
+reachable from one another without crossing a wall) and copies each into its own
+minimal bounding subgrid, so the placement is solved on the small pieces
+separately rather than on the whole board at once.
+
+### prob2 - Piltover Towers
+
+Objective: given a weighted graph of towers (nodes) and connections (edges),
+find a tree that links a given set of mandatory towers while minimising the
+largest edge cost used (a minimum bottleneck connection). Optional towers may be
+used as intermediate steps. If the mandatory towers cannot all be connected, the
+answer is "Impossible to connect!".
+
+Solution: binary search on the maximum allowed edge cost. For each candidate
+threshold, a Disjoint Set Union (union-find) joins only the edges whose cost is
+at most the threshold and checks whether all mandatory towers fall in the same
+component. The search converges on the smallest threshold that keeps them
+connected, which is the minimum possible bottleneck edge.
 
 ## Building and running
 
