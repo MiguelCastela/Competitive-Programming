@@ -7,8 +7,8 @@ handouts.
 
 The two courses covered are:
 
-- Competitive Programming, organized into lessons, contests, and assessments.
-- Estrategias Algoritmicas (Algorithmic Strategies), a related course with its
+- Competitive Programming (3 ECTS extra course), organized into lessons, contests, and assessments.
+- Estrategias Algoritmicas (third year), a related course with its
   own top-level folder holding the practice exercises and the two course
   projects.
 
