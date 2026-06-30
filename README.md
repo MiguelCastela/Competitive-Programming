@@ -43,12 +43,6 @@ individual problems from that set. An `input.txt` file, when present, holds
 sample input used while testing. Files such as `A_bottom_up.cpp` are alternative
 solutions to the same problem using a different approach.
 
-## Naming conventions
-
-- `aula` is the Portuguese word for "lesson" or "class".
-- `freq` (frequencia) refers to a course assessment.
-- `torneio` means "tournament" or "contest".
-- Lesson folders are zero padded (`aula01`, `aula02`, ...) so they sort in order.
 
 ## Building and running
 
