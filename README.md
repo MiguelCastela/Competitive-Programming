@@ -1,8 +1,16 @@
 # Competitive Programming
 
-Solutions and exercises from a competitive programming course, written mostly in
-C++ with a few Python scripts. The material is organized by course lessons,
-contests, and assessments, alongside the original course handouts.
+Solutions and exercises from two closely related university courses, written
+mostly in C++ with a few Python and Java files. The material is organized by
+course lessons, contests, and assessments, alongside the original course
+handouts.
+
+The two courses covered are:
+
+- Competitive Programming, organized into lessons, contests, and assessments.
+- Estrategias Algoritmicas (Algorithmic Strategies), a related course with its
+  own top-level folder holding the practice exercises and the two course
+  projects.
 
 ## Repository structure
 
@@ -21,6 +29,11 @@ contests, and assessments, alongside the original course handouts.
 │   └── freq-treino/    Practice assessments
 │       ├── freq2024-final/
 │       └── freq2025/
+├── estrategias-algoritmicas/  Algorithmic Strategies course
+│   ├── exercises/      Practice problems
+│   └── projects/       The two graded course projects
+│       ├── prob1/          Battle for Piltover
+│       └── prob2/          Piltover Towers
 ├── handouts/       Course PDFs (weekly problem statements)
 └── README.md
 ```

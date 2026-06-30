@@ -1,0 +1,3 @@
+Guardar melhor solução
+Early checks
+if all fails, floodfill
